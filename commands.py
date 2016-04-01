@@ -1,2 +1,4 @@
-with open('data.txt', 'r') as myfile:
+file = raw_input('file')
+
+with open(file, 'r') as myfile:
     data=myfile.read().replace('\n', '')
