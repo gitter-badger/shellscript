@@ -1,21 +1,26 @@
 index = 0
-file = 'example.ss'
+file = 'example.shs'
 data = ''
+loop = 0
+loopString = ''
 commands = []
 import subprocess
 
 with open(file, 'r') as myfile:
     data=myfile.read().replace('\n', '')
     
-print data
 sTagFound = False
 eTagFound = False
 rangeStart = 0
 rangeEnd = 0
 
-if '<shellscript>' in data and sTagFound = False:
-    while sTagFound = False:
-        
+if '<shellscript>' in data and sTagFound == False:
+    while sTagFound == False:
+        if loop == 10:
+            loop = 0
+            loopString = 0
+        while loop < 9:
+            loopString = loopString + data[index + loop]
 elif '<shellscript>' not in data:
     print 'Error: No starting tag was found.'
     
