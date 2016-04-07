@@ -21,6 +21,8 @@ if '<shellscript>' in data and sTagFound == False:
             loopString = 0
         while loop < 9:
             loopString = loopString + data[index + loop]
+            if loopString == '<shellscript':
+                sTagFound = True
 elif '<shellscript>' not in data:
     print 'Error: No starting tag was found.'
     
