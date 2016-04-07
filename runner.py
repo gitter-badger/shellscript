@@ -1,14 +1,24 @@
 index = 0
 file = 'example.ss'
 data = ''
+commands = []
+import subprocess
 
 with open(file, 'r') as myfile:
     data=myfile.read().replace('\n', '')
     
 print data
+sTagFound = False
+eTagFound = False
+rangeStart = 0
+rangeEnd = 0
 
-import subprocess
-
+if '<shellscript>' in data and sTagFound = False:
+    while sTagFound = False:
+        
+elif '<shellscript>' not in data:
+    print 'Error: No starting tag was found.'
+    
 cmd = ['ssh', 'user@machine2',
        'mkdir -p output/dir; cat - > output/dir/file.dat']
 
