@@ -4,6 +4,8 @@ data = ''
 loop = 0
 loopString = ''
 commands = []
+command = 0
+done = False
 import subprocess
 
 with open(file, 'r') as myfile:
@@ -21,17 +23,16 @@ if '<shellscript>' in data and sTagFound == False:
             loopString = 0
         while loop < 9:
             loopString = loopString + data[index + loop]
-            if loopString == '<shellscript':
+            if loopString == '<shellscript>':
                 sTagFound = True
 elif '<shellscript>' not in data:
     print 'Error: No starting tag was found.'
-    
-cmd = ['ssh', 'user@machine2',
-       'mkdir -p output/dir; cat - > output/dir/file.dat']
 
-p = subprocess.Popen(cmd, stdin=subprocess.PIPE)
+while not done and sTagFound:
+    done = False # had to put something there
+    # to be finished later
 
-your_inmem_data = 'foobarbaz\0' * 1024 * 1024
-
-for chunk_ix in range(0, len(your_inmem_data), 1024):
-    chunk = your_inmem_data[chunk_ix:chunk_ix + 1024]
+if done:
+    while command <= len(commands):
+        subprocess.call(commands[command], shell=True)
+        command = command + 1
