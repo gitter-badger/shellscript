@@ -1,3 +1,7 @@
+'''
+Created by Baran Skistad, bjskistad on GitHub. 
+Please give credit to Baran Skistad if you use this.
+'''
 index = 0
 file = 'example.shs'
 data = ''
@@ -30,7 +34,7 @@ elif '<shellscript>' not in data:
 
 while not done and sTagFound:
     done = False # had to put something there
-    # to be finished later
+    
 
 if done:
     while command <= len(commands):
