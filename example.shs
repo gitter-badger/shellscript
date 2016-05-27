@@ -1,3 +1,2 @@
-<shellscript>
-run rm wha;
-</shellscript>
+rm foo
+git clone https://github.com/jel-lang/jel.git

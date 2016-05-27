@@ -1,0 +1,7 @@
+// Create a custom Cloud9 runner - similar to the Sublime build system
+// For more information see https://docs.c9.io/custom_runners.html
+{
+    "cmd": ["python","shs.py", "$file_name"],
+    "info": "Your file $file_name is now running with the ShellScript runner. ",
+    "selector": "runner.py"
+}
