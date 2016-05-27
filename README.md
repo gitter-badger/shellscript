@@ -11,3 +11,6 @@ ShellScript is a shell command runner written in Python.
 
 # Syntax
 Basic ShellScript looks like a `.gitignore` file. Simply write the commands you want, each command gets it own line. See [`example.shs`.](https://github.com/shellscript-lang/shellscript/blob/master/example.shs)
+
+# Running
+You can use ShellScript by creating a `.shs` file and putting your commands in the file. Then, run your file using `shs.run` - for a run configuration, or `python shs.py <filename>` - in the terminal. 
