@@ -1,11 +1,12 @@
 {
   "name": "shsscrpt",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "The ShellScript Compiler",
   "main": "shs.py",
   "scripts": {
     "test": "python shs.py example.shs"
   },
+  "bin" : { "shs" : "./shs.py" },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bjskistad/shellscript.git"

@@ -19,9 +19,8 @@ while line <= len(contents):
             lin = lin[:-1]
         contents[line-1] = lin
     line = line + 1
-print contents
 if done:
     while command <= len(contents):
         ccommand = contents[command-1]
-        subprocess.call([ccommand], shell=True)
+        subprocess.call([ccommand-1], shell=True)
         command = command + 1

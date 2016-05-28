@@ -1,5 +1,5 @@
 {
     "cmd": ["python","shs.py", "$file_name"],
     "info": "",
-    "selector": "runner.py"
+    "selector": "shs.py"
 }
