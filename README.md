@@ -1,4 +1,6 @@
 # ShellScript
+
+[![Join the chat at https://gitter.im/chikadi/shellscript](https://badges.gitter.im/chikadi/shellscript.svg)](https://gitter.im/chikadi/shellscript?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 This is the official ShellScript compiler. ShellScript is a language that compiles written lines of code to runnable shell commands.
 
 # Install
