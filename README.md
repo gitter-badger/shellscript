@@ -1,5 +1,5 @@
 # ShellScript
-This is the official ShellScript runner. ShellScript is a language that compiles written lines of code to runnable shell commands.
+This is the official ShellScript compiler. ShellScript is a language that compiles written lines of code to runnable shell commands.
 
 # Install
 Install using npm
