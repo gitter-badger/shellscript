@@ -22,5 +22,5 @@ while line <= len(contents):
 if done:
     while command <= len(contents):
         ccommand = contents[command-1]
-        subprocess.call([ccommand-1], shell=True)
+        subprocess.call([ccommand], shell=True)
         command = command + 1
